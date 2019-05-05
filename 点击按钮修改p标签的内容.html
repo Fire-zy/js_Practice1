@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="but ton" value="设置p的内容" id="btn"/ >
+		<p id="p1">我是一个p标签</p>
+		
+		<script>
+			//凡是成对的标签，中间的文本内容，设置的时候，都使用ineerText这个属性的方式
+			//根据id获取按钮，为按钮注册点击事件，添加事件处理函数
+			var btnObj=document.getElementById("btn");
+			btnObj.onclick=function(){
+				document.getElementById("p1").innerText="这是一个P";		
+			};
+		</script>
+	</body>
+</html>

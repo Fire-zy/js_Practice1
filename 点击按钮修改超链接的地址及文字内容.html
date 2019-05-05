@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="显示效果" />
+		<a id="ak" href="https://blog.csdn.net/qq_43601059">csdn</a>
+		
+		<script>
+//			document.getElementById("btn").onclick=function(){
+//				根据ID获取超链接，设置href属性
+//				document.getElementById("ak").href="https://www.baidu.com";
+//				根据id获取超链接，更改文字内容
+//				document.getElementById("ak").innerText="百度";
+//			};
+			
+			
+				
+			//代码优化
+			document.getElementById("btn").onclick=function(){
+				//根据ID获取超链接，设置href属性
+				var aObj=document.getElementById("ak");
+				//根据id获取超链接，更改文字内容
+				aObj.href="https://www.baidu.com";
+				aObj.innerText="百度";
+			};
+			
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button"  id="btn" value="点菜" />
+		<select name="" id="ss">
+			<option value="1">红烧猪蹄</option>
+			<option value="2">清蒸鲈鱼</option>
+			<option value="3" id="op1">蜜汁鸡翅</option>
+			<option value="4">油闷大虾</option>
+		</select>
+		<script src="common.js"></script>
+		<script>
+			my$("btn").onclick=function(){
+				my$("op1").selected=true;
+			};
+		</script>
+		
+		<textarea name="" id="tt" cols="30" rows="20" readonly="readonly">
+借我十年
+借我忙命天涯的勇敢   
+借我说得出口的旦旦誓言
+		</textarea>
+		<input type="button" id="btn2" value="注册 " />
+		<script>
+			my$("btn2").onclick=function(){
+				my$("tt").value="哈哈哈哈哈";
+				//my$("tt").innerText="哈哈哈哈";
+			};
+		</script>
+	</body>
+</html>

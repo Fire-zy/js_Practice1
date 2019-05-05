@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button"" id="btn" value="提示效果" />
+		<img src="img/99.jpg" alt="hello" title="车银优" width="50%" />
+		<script>
+			document.getElementById("btn").onclick=function(){
+				var imgObjs=document.getElementsByTagName("img");
+				imgObjs[0].alt="改了";
+				imgObjs[0].title="不一样了";
+			};
+			
+		</script>
+	</body>
+</html>

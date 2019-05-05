@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: palegreen;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn" value="设置样式" />
+		
+		<div id="dv">
+			
+		</div>
+		
+		<script src="common.js"></script>
+		<script >
+			//点击按钮，修改div的宽高，颜色
+			my$("btn").onclick=function(){
+				my$("dv").style.width="400px";
+				my$("dv").style.height="400px";
+				//如果css中的属性是多个单词的写法，在js代码中DOM操作的时候，把”-“去掉，后面单词的首字母大写
+				my$("dv").style.backgroundColor="pink";
+			};
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="点击修改value属性" />
+		<script>
+			var btnObj=document.getElementById("btn");
+			btnObj.onclick=function(){
+				//修改value
+				btnObj.value="修改了";
+				//按钮修改成文本框
+				//btnObj.value="text";
+				this.type="text";
+				
+			};
+				
+		</script>
+	</body>s
+</html>

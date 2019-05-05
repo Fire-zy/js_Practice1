@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>zy_practice</title>
+	</head>
+	<body>
+		<!--先有安按钮，才能获取，获取之后才能注册-->
+		<input type="button" id="btn" value="点击" />
+		<script type="text/javascript">
+			//根据ID的值从真个文档中获取这个元素（标签）
+			var btnObj=document.getElementById("btn");
+			//为该元素注册点击事件
+			document.getElementById("btn").onclick=function(){
+				alert("舒舒服服学习");
+			};
+		</script>
+	</body>
+</html>

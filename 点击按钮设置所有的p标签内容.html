@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="显示效果" />
+		<p id="p1">我p1标签</p>
+		<p id="p2">我p2标签</p>
+		<p id="p3">我p3标签</p>
+		<p id="p4">我p4标签</p>
+		<div id="dv1">
+			<p>哈哈</p>
+			<p>哈哈</p>
+			<p>哈哈</p>
+			<p>哈哈</p>
+		</div>
+		<div id="dv2">
+			<p>哈哈哈哈</p>
+			<p>哈哈哈哈</p>
+			<p>哈哈哈哈</p>
+			<p>哈哈哈哈</p>
+		</div>
+		<script>
+			
+			//document.getElementsByTagName("标签的名字")返回的是一个伪数组
+			 document.getElementById("btn").onclick=function(){
+			 	//根据标签名字获取标签
+			 	//var pObjs=document.getElementsByTagName("p");
+			 	var pObjs=document.getElementById("dv1").getElementsByTagName("p");
+			 	for(var i=0;i<pObjs.length;i++){
+			 		pObjs[i].innerText="我们都改变了";
+			 	}
+			 };
+		</script>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="显示图片" />
+		<img src="" id="im" alert=""/>
+		<script>
+			//点击按钮显示图片：点击按钮的时候设置img标签的src属性有一个图片的路径
+			
+			//根据ID获取按钮
+			var btnObj=document.getElementById("btn");
+			//为按钮注册点击事件，添加事件处理函数
+			btnObj.onclick=function(){
+				//根据id获取图片的路径，设置图片的src属性
+				var imObj=document.getElementById("im");
+				imObj.src="img/00.jpg";
+				//设置图片大小
+				imObj.width=350;
+				imObj.height=450;
+			};
+			
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn" value="隐藏" />
+		<input type="button" id="btn2" value="显示" />
+		<div id="dv">
+			
+		</div>
+		<script src="common.js"></script>
+			
+		<script>
+			my$("btn").onclick=function(){
+				my$("dv").style.display="none";
+			};
+			my$("btn2").onclick=function(){
+				my$("dv").style.display="block";
+			};
+		</script>
+	</body>
+</html>

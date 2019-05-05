@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="我最帅" />
+		<input type="button" id="btn" value="我最帅" />
+		<input type="button" id="btn" value="我最帅" />
+		<input type="button" id="btn" value="我最帅" />
+		<input type="button" id="btn" value="我最帅" />
+		<script>
+			//获取所有的按钮 ，分别注册点击事件
+			var btnObjs=document.getElementsByTagName("input");
+			//循环遍历所有的按钮
+			for(var i=0;i<btnObjs.length;i++){
+				btnObjs[i].onclick=function(){
+					//把所有 的按钮 的 value值设置为默认的值 ：我最帅
+					for(var j=0;j<btnObjs.length;j++){
+						btnObjs[j].value="我最帅";
+					}
+					//当前呗点击的按钮的value值设置为:我最丑
+					this.value="我最丑";
+				};
+			}
+		</script>
+	</body>
+</html>

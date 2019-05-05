@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			img {
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/QQ图片20181005150937.jpg" alt="" id="im1"/>
+		<img src="img/QQ图片20181005150937.jpg" alt="" id="im2"/>
+		<img src="img/QQ图片20181005150937.jpg" alt="" id="im3"/>
+		<script type="text/javascript">
+			var imgObjs=document.getElementsByTagName("img");
+			//循环遍历数组，获取每个图片标签，注册点击事件，添加事件处理函数
+			for(var i=0;i<imgObjs.length;i++){
+				imgObjs[i].onclick=function(){
+					alert("我最帅了");
+				};
+			}
+		</script>
+	</body>
+</html>
